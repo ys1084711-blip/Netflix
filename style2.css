@@ -1,0 +1,739 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    font-family: "Martel Sans", sans-serif;
+}
+
+/* ─── HERO ─── */
+
+.main {
+    background-image: url(assets/background\ photo\ -\ netflix.jpg);
+    min-height: 90vh;
+    width: 100%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main .box {
+    min-height: 90vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.55;
+    filter: brightness(5%);
+    top: 0;
+    position: absolute;
+}
+
+/* ─── NAV ─── */
+
+nav {
+    margin: auto;
+    max-width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+    padding: 0 10px;
+}
+
+span img {
+    margin-top: 20px;
+    color: rgb(179, 0, 0);
+    height: auto;
+    width: 150px;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+}
+
+.btns {
+    z-index: 10;
+    position: relative;
+    display: flex;
+    gap: 10px;
+}
+
+.langbtn {
+    background: rgba(0, 0, 0, 0.35);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 3px;
+    cursor: pointer;
+    height: 32px;
+    padding: 0 34px 0 12px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 32px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.langbtn:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.12);
+}
+
+.signinBtn {
+    color: white;
+    background-color: #e60911;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* ─── HERO TEXT ─── */
+
+.text {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    z-index: 10;
+    color: white;
+    padding: clamp(80px, 12vh, 200px) 16px 0;
+    text-align: center;
+}
+
+.txt1 {
+    font-size: clamp(28px, 5vw, 50px);
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 1000;
+    line-height: 1.08;
+    text-align: center;
+    max-width: 20ch;
+    margin: 0 auto;
+    overflow-wrap: break-word;
+    word-break: normal;
+}
+
+.txt2 {
+    font-size: clamp(16px, 2.2vw, 20px);
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.txt3 {
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(16px, 2.2vw, 20px);
+    text-align: center;
+    margin-top: 8px;
+    font-weight: 400;
+}
+
+.btns2 {
+    z-index: 10;
+    position: relative;
+    margin: 20px 0 0;
+    display: flex;
+    cursor: pointer;
+    gap: 20px;
+    width: min(800px, 100%);
+    justify-content: center;
+    align-items: center;
+}
+
+.txt4 {
+    height: 56px;
+    font-size: 16px;
+    width: min(350px, 100%);
+    padding: 16px 20px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    background-color: rgba(0, 0, 0, 0.35);
+    color: white;
+    box-sizing: border-box;
+}
+
+.txt4::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.stbtn {
+    height: 60px;
+    cursor: pointer;
+    width: min(250px, 100%);
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgb(210, 0, 0);
+    border: none;
+    color: white;
+}
+
+/* ─── SEPARATORS ─── */
+
+.separation,
+.separation2,
+.separation3,
+.separation4,
+.separation5 {
+    height: 5px;
+    background-color: rgb(143, 143, 143);
+    opacity: 50%;
+}
+
+/* ─── CONTENT BACKGROUND ─── */
+
+.back2 {
+    background-color: rgb(0, 0, 0);
+}
+
+/* ─── SHARED SECTION LAYOUT ─── */
+
+.section1,
+.section3 {
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.section2nd,
+.section4nd {
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+/* ─── SECTION 1 & 3 TEXT ─── */
+
+.sec1txt,
+.sec3txt {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    text-align: left;
+    justify-content: center;
+    flex: 1;
+    min-width: 0;
+}
+
+.sec1txt > span:first-child,
+.sec3txt > span:first-child {
+    font-family: "Martel Sans", sans-serif;
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: 800;
+    line-height: 1.08;
+    max-width: 20ch;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10vw;
+}
+
+.sec1txt > span:last-child,
+.sec3txt > span:last-child {
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(15px, 2vw, 20px);
+    font-weight: 400;
+    line-height: 1.4;
+    max-width: 45ch;
+    margin-left: 10vw;
+}
+
+/* ─── SECTION 2 & 4 TEXT ─── */
+
+.sec2txt,
+.sec4txt {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 30px 0;
+    color: white;
+    flex: 1;
+    min-width: 0;
+}
+
+.sec2txt > span:first-child,
+.sec4txt > span:first-child {
+    font-family: "Martel Sans", sans-serif;
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: 800;
+    line-height: 1.3;
+    max-width: 20ch;
+    margin-right: 5vw;
+}
+
+.sec2txt > span:last-child,
+.sec4txt > span:last-child {
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(15px, 2vw, 20px);
+    font-weight: 400;
+}
+
+/* ══════════════════════════════════════════════════════
+   VIDEO FRAME SYSTEM — HOW IT WORKS
+   ────────────────────────────────────────────────────
+   The image IS the frame. The video overlays on top.
+   Both live inside a position:relative wrapper that
+   shrinks fluidly with the screen via clamp().
+
+   The video uses % for top / left / width / height so
+   it scales 1:1 with the image at EVERY screen size.
+   No transform hacks. No fixed px. No margin tricks.
+   No breakpoint overrides for the video at all.
+
+   Only tune the 4 % values to match your image assets:
+     top    = where the TV screen starts (% of img height)
+     left   = left edge of TV screen    (% of img width)
+     width  = width of TV screen        (% of img width)
+     height = height of TV screen       (% of img height)
+══════════════════════════════════════════════════════ */
+
+/* ── Section 1 frame wrapper ── */
+.sec1img {
+    position: relative;
+    flex-shrink: 0;
+    /* fluid: full 550px on desktop, scales with viewport below that */
+    width: clamp(240px, 44vw, 550px);
+    margin-right: 4vw;
+    /* safety net: clip anything that escapes the frame */
+    overflow: hidden;
+    /* needed so % height on child resolves against this box */
+    display: block;
+}
+
+.sec1img img {
+    width: 100%;       /* stretches to whatever the wrapper is */
+    height: auto;      /* height is set by the image's own aspect ratio */
+    display: block;
+    position: relative;
+    z-index: 10;
+}
+
+.sec1img video {
+    position: absolute;
+    /*
+       These % values match a typical Netflix TV-mockup image.
+       Adjust to match the exact screen area in YOUR sec1 image.
+         top    17.5% = video starts 17.5% down from top of image
+         left   13%   = video starts 13% in from left of image
+         width  73%   = video occupies 73% of image width
+         height 64%   = video occupies 64% of image height
+    */
+    top: 17.5%;
+    left: 13%;
+    width: 86%;
+    height: 64%;
+    z-index: 5;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* ── Section 3 frame wrapper ── */
+.sec3img {
+    position: relative;
+    flex-shrink: 0;
+    width: clamp(240px, 44vw, 550px);
+    margin-right: 4vw;
+    overflow: hidden;
+    display: block;
+}
+
+.sec3img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 10;
+}
+
+.sec3img video {
+    position: absolute;
+    /*Adjust these 4 values to match the screen area in YOUR sec3 image.*/
+    top: 15.5%;
+    left: 9%;
+    width: 80%;
+    height: 67%;
+    z-index: 5;
+    object-fit: cover;
+    object-position: center;
+    
+}
+
+/* ─── SECTION 2 & 4 IMAGES (no video, just fluid img) ─── */
+
+.sec2img,
+.sec4img {
+    flex-shrink: 0;
+    width: clamp(240px, 40vw, 500px);
+    margin-left: 5vw;
+}
+
+.sec2img img,
+.sec4img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ─── FAQ ─── */
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(28px, 5vw, 40px);
+    margin-top: 40px;
+    color: white;
+}
+
+.faq {
+    background: black;
+    color: white;
+    padding: 34px;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: clamp(28px, 5vw, 48px);
+}
+
+.faqbox {
+    transition: background-color 0.3s ease;
+    font-size: clamp(16px, 2.5vw, 24px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 34px auto;
+    cursor: pointer;
+    gap: 16px;
+}
+
+.faqbox:hover {
+    background-color: #414141;
+    color: white;
+}
+
+.faqbox svg {
+    filter: invert(1);
+    height: 30px;
+    width: 30px;
+    flex-shrink: 0;
+}
+
+/* ─── FOOTER ─── */
+
+footer {
+    background: #000;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 60px 0;
+    box-sizing: border-box;
+}
+
+footer .questions {
+    padding: 0 60px 34px;
+    max-width: 65vw;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 16px;
+}
+
+.footer {
+    max-width: 65vw;
+    margin: 0 auto;
+    padding: 0 60px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px 60px;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-item a {
+    color: #b3b3b3;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 2.2;
+}
+
+.footer-item a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* ─── SECTION 5 / 6 ─── */
+
+.text6 {
+    font-size: clamp(16px, 2vw, 20px);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 16px;
+}
+
+.section5 .btns6 {
+    gap: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 16px;
+}
+
+/* ═══════════════════════════════════════════════════
+   TABLET  ≤ 900px
+   Sections stay side-by-side. Images shrink via
+   clamp() automatically — no extra rules needed for
+   the video because % positions track with the image.
+═══════════════════════════════════════════════════ */
+
+@media (max-width: 900px) {
+
+    nav {
+        max-width: 95vw;
+    }
+
+    nav img {
+        width: 120px;
+    }
+
+    .langbtn {
+        padding: 5px 18px;
+    }
+
+    .section1,
+    .section2nd,
+    .section3,
+    .section4nd {
+        max-width: 95vw;
+        padding: 40px 0;
+        gap: 20px;
+    }
+
+    .sec1txt > span:first-child,
+    .sec1txt > span:last-child,
+    .sec3txt > span:first-child,
+    .sec3txt > span:last-child {
+        margin-left: 3vw;
+        margin-right: 0;
+    }
+
+    .sec2txt > span:first-child,
+    .sec4txt > span:first-child {
+        margin-right: 3vw;
+    }
+
+    /* sec1img / sec3img already shrink through clamp() — nothing extra needed */
+
+    .faqbox {
+        max-width: 85vw;
+    }
+
+    footer .questions,
+    .footer {
+        max-width: 90vw;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .footer {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px 30px;
+    }
+}
+
+/* ═══════════════════════════════════════════════════
+   MOBILE  ≤ 600px
+   Sections stack vertically. Image+video goes full
+   width below the text. % video positions auto-track.
+═══════════════════════════════════════════════════ */
+
+@media (max-width: 600px) {
+
+    /* NAV */
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        height: auto;
+        padding: 10px 12px;
+        max-width: 100%;
+    }
+
+    .btns {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .langbtn {
+        flex: 1;
+        padding: 6px 10px;
+    }
+
+    .signinBtn {
+        padding: 6px 12px;
+        white-space: nowrap;
+    }
+
+    /* HERO INPUT */
+    .btns2 {
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 16px;
+        padding: 0 8px;
+    }
+
+    .txt4,
+    .stbtn {
+        width: 100%;
+        max-width: 520px;
+    }
+
+    /* SECTIONS stack: text on top, image below */
+    .section1,
+    .section2nd,
+    .section3,
+    .section4nd {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding: 36px 16px;
+        max-width: 100%;
+    }
+
+    .sec1txt,
+    .sec3txt {
+        align-items: center;
+        order: 1;
+    }
+
+    .sec1txt > span:first-child,
+    .sec1txt > span:last-child,
+    .sec3txt > span:first-child,
+    .sec3txt > span:last-child {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .sec2txt,
+    .sec4txt {
+        align-items: center;
+        text-align: center;
+        order: 1;
+        padding: 0;
+    }
+
+    .sec2txt > span:first-child,
+    .sec4txt > span:first-child {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    /*
+       Full-width on mobile — the % video positions scale
+       automatically with the image. No video rules needed here.
+    */
+    .sec1img,
+    .sec3img {
+        order: 2;
+        width: 90vw;
+        max-width: 480px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .sec2img,
+    .sec4img {
+        order: 2;
+        width: 50vw;
+        max-width: 480px;
+        margin-left: 10vw;
+        margin-right: 10px;
+    }
+
+    /* FAQ */
+    .faqbox {
+        max-width: 95vw;
+        padding: 16px;
+        font-size: 16px;
+    }
+
+    /* FOOTER */
+    footer {
+        padding: 40px 0;
+    }
+
+    footer .questions {
+        padding: 0 16px 24px;
+        font-size: 14px;
+        max-width: 100%;
+    }
+
+    .footer {
+        padding: 0 16px;
+        max-width: 100%;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px 20px;
+    }
+
+    .footer-item a {
+        font-size: 13px;
+    }
+}
+
+/* ═══════════════════════════════════════════════════
+   SMALL MOBILE  ≤ 420px
+═══════════════════════════════════════════════════ */
+
+@media (max-width: 420px) {
+
+    nav img {
+        width: 105px;
+    }
+
+    .langbtn {
+        font-size: 13px;
+    }
+
+    .sec1img,
+    .sec3img,
+    .sec2img,
+    .sec4img {
+        width: 95vw;
+    }
+
+    .faqbox {
+        font-size: 14px;
+        padding: 14px;
+    }
+}
