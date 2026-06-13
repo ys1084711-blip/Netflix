@@ -420,6 +420,7 @@ h2 {
     display: flex;
     flex-direction: column; /* answer expands downward */
     justify-content: flex-start;
+    align-items: center; /* keeps question + icon inside the padded box */
     background-color: #2d2d2d;
     padding: 24px;
     max-width: 60vw;
@@ -427,6 +428,7 @@ h2 {
     cursor: pointer;
     gap: 16px;
     height: 88px; /* collapsed height (fixed) */
+    overflow: hidden; /* prevents icon/answer looking outside the box */
 }
 
 .faqbox.faq-open {
@@ -440,10 +442,11 @@ h2 {
     justify-content: center;
 }
 
-
-/* keep the icon stable and aligned like the centered text */
+/* plus icon inside the header area */
 .faqbox > svg {
-    align-self: center;
+    align-self: flex-end; /* right side */
+    margin-top: -2px; /* small visual tweak so it sits inside the padding */
+    display: block;
 }
 
 
