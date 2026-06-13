@@ -97,14 +97,9 @@
 
         panel = document.createElement("div");
         panel.className = "faq-answer";
+        // CSS handles styling/centering. JS only controls height for smooth animation.
         panel.style.maxHeight = "0px";
         panel.style.overflow = "hidden";
-        panel.style.transition = "max-height 220ms ease";
-        panel.style.padding = "0 24px";
-        panel.style.marginTop = "0px";
-        panel.style.color = "#cfcfcf";
-        panel.style.fontFamily = "Poppins, sans-serif";
-        panel.style.fontSize = "14px";
 
         const questionText = (box.querySelector("span")?.textContent || "").trim();
 
