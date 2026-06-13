@@ -426,6 +426,11 @@ h2 {
     margin: 34px auto;
     cursor: pointer;
     gap: 16px;
+    height: 120px; /* collapsed height */
+}
+
+.faqbox.faq-open {
+    height: auto; /* allow expansion when opened */
 }
 
 .faqbox > span {
@@ -454,9 +459,9 @@ h2 {
     max-height: 0px;
 }
 
-.faqbox.faq-open .faq-answer {
+.faqbox.faq-open .faq-answer {}
     /* max-height is set by JS for smooth animation */
-}
+
 
 .faqbox:hover {
     background-color: #414141;
