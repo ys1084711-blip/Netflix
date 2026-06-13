@@ -426,7 +426,7 @@ h2 {
     margin: 34px auto;
     cursor: pointer;
     gap: 16px;
-    height: 120px; /* collapsed height */
+    height: 88px; /* collapsed height (fixed) */
 }
 
 .faqbox.faq-open {
@@ -436,12 +436,16 @@ h2 {
 .faqbox > span {
     width: 100%;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
-/* keep the icon visually stable */
+
+/* keep the icon stable and aligned like the centered text */
 .faqbox > svg {
-    align-self: flex-end;
+    align-self: center;
 }
+
 
 .faq-answer {
     width: 100%;
@@ -459,7 +463,7 @@ h2 {
     max-height: 0px;
 }
 
-.faqbox.faq-open .faq-answer {}
+.faqbox.faq-open .faq-answer
     /* max-height is set by JS for smooth animation */
 
 
