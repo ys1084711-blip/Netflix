@@ -442,10 +442,10 @@ h2 {
     justify-content: center;
 }
 
-/* plus icon inside the header area */
+/* plus icon inside the header area (top-right) */
 .faqbox > svg {
     align-self: flex-end; /* right side */
-    margin-top: -2px; /* small visual tweak so it sits inside the padding */
+    margin-top: -12px; /* push to top-right inside padding */
     display: block;
 }
 
